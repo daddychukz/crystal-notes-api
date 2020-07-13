@@ -55,8 +55,6 @@ functions:
   get:
     # Defines an HTTP API endpoint that calls the main function in get.js
     handler: functions/get.main
-    memorySize: 128
-    timeout: 10
     events:
       - http:
           path: notes/{id}
